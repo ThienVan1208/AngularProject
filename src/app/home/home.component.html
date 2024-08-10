@@ -1,0 +1,17 @@
+<h1 >Welcome to my web page</h1>
+<h2>List of games:</h2>
+<ul>
+    @for (game_name of listGame; track game_name.id) {
+        <li>
+            <div class="inline">
+                <img [class.img_game] = "true"  src="{{game_name.imgSrc}}" alt="game_name.id">
+                <p class="text_display">
+                    <a [routerLink]="['/game', game_name.id]">{{ game_name.gameName }}</a>
+                </p>
+                
+            </div>
+        </li>
+    }
+  </ul>
+
+  

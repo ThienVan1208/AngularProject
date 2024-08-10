@@ -1,0 +1,11 @@
+.img_game{
+    width: 300px;
+    height: fit-content;
+    
+}
+.inline{
+    display: inline-flex;
+}
+.text_display{
+    padding: 10px;
+}
